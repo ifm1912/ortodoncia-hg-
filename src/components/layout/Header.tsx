@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { NAV_ITEMS, SITE_CONFIG } from '@/lib/constants';
@@ -9,6 +9,8 @@ import { MobileMenu } from './MobileMenu';
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  const closeMobileMenu = useCallback(() => setMobileMenuOpen(false), []);
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-primary-100">
@@ -56,7 +58,7 @@ export function Header() {
         </div>
       </nav>
 
-      <MobileMenu open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
+      <MobileMenu open={mobileMenuOpen} onClose={closeMobileMenu} />
     </header>
   );
 }
