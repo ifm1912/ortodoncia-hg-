@@ -42,7 +42,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
     >
       {/* Overlay */}
       <div
-        className={`fixed inset-0 bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
           open ? 'opacity-100' : 'opacity-0'
         }`}
         onClick={onClose}
@@ -51,17 +51,17 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
 
       {/* Panel */}
       <div
-        className={`fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-xl transition-transform duration-300 ease-out ${
+        className={`fixed inset-y-0 right-0 w-full max-w-sm bg-primary-900 shadow-xl transition-transform duration-300 ease-out ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex items-center justify-between p-6 border-b border-primary-100">
-          <span className="text-lg font-heading font-bold text-primary-800">
+        <div className="flex items-center justify-between p-6 border-b border-primary-700">
+          <span className="text-lg font-heading font-bold text-white">
             {SITE_CONFIG.name}
           </span>
           <button
             type="button"
-            className="p-2 rounded-md text-gray-600 hover:text-primary-700 hover:bg-primary-50"
+            className="p-2 rounded-md text-primary-300 hover:text-white hover:bg-primary-800"
             onClick={onClose}
             aria-label="Cerrar menú de navegación"
           >
@@ -81,8 +81,8 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                     href={item.href}
                     className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${
                       isActive
-                        ? 'text-primary-700 bg-primary-50'
-                        : 'text-gray-600 hover:text-primary-700 hover:bg-primary-50/50'
+                        ? 'text-white bg-primary-700'
+                        : 'text-primary-100 hover:text-white hover:bg-primary-800'
                     }`}
                   >
                     {item.label}
