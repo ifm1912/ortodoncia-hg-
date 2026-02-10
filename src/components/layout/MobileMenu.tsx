@@ -42,35 +42,40 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
     >
       {/* Overlay */}
       <div
-        className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-black/60 transition-opacity duration-300 ${
           open ? 'opacity-100' : 'opacity-0'
         }`}
         onClick={onClose}
         aria-hidden="true"
       />
 
-      {/* Panel */}
+      {/* Panel — inline style ensures fully opaque background */}
       <div
-        className={`fixed inset-y-0 right-0 w-full max-w-sm bg-primary-900 shadow-xl transition-transform duration-300 ease-out ${
+        className={`fixed inset-y-0 right-0 w-full max-w-sm shadow-2xl transition-transform duration-300 ease-out ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
+        style={{ backgroundColor: '#0a1f1f' }}
       >
-        <div className="flex items-center justify-between p-6 border-b border-primary-700">
+        <div
+          className="flex items-center justify-between p-6"
+          style={{ borderBottom: '1px solid #174b4b' }}
+        >
           <span className="text-lg font-heading font-bold text-white">
             {SITE_CONFIG.name}
           </span>
           <button
             type="button"
-            className="p-2 rounded-md text-primary-300 hover:text-white hover:bg-primary-800"
+            className="p-2 rounded-md text-white/70 hover:text-white"
             onClick={onClose}
             aria-label="Cerrar menú de navegación"
           >
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        <nav className="p-6 overflow-y-auto max-h-[calc(100vh-5rem)]">
+
+        <nav className="px-4 py-6 overflow-y-auto max-h-[calc(100vh-5rem)]">
           <ul className="space-y-1">
             {NAV_ITEMS.map((item) => {
               const isActive = pathname === item.href ||
@@ -79,10 +84,10 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${
+                    className={`block px-4 py-3.5 text-base font-medium rounded-lg transition-colors ${
                       isActive
-                        ? 'text-white bg-primary-700'
-                        : 'text-primary-100 hover:text-white hover:bg-primary-800'
+                        ? 'text-white bg-white/15'
+                        : 'text-white/80 hover:text-white hover:bg-white/10'
                     }`}
                   >
                     {item.label}
