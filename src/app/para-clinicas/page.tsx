@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { generatePageMetadata } from '@/lib/metadata';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema } from '@/lib/schema';
@@ -89,7 +90,7 @@ const qualityItems = [
   { label: '+10 años de experiencia', description: 'Trayectoria consolidada en ortodoncia' },
   { label: '150+ casos anuales', description: 'Volumen que garantiza experiencia continua' },
   { label: 'Máster Oficial en Ortodoncia', description: 'Universitat de València (192 ECTS)' },
-  { label: 'Formación continua', description: 'Certificaciones en Invisalign®, WIN®, INSIGNIA® y más' },
+  { label: 'Formación continua', description: 'Certificaciones en Invisalign®, WIN® y más' },
 ];
 
 export default function ParaClinicasPage() {
@@ -141,27 +142,38 @@ export default function ParaClinicasPage() {
 
       {/* Workflow Steps */}
       <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-primary-50/30">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <SectionHeading
             title="Cómo trabajamos juntos"
             subtitle="Un proceso claro y predecible, desde la primera derivación hasta la finalización del tratamiento."
           />
-          <div className="space-y-8 mt-8">
-            {workflowSteps.map((item) => (
-              <div key={item.step} className="flex gap-6 items-start">
-                <div className="w-14 h-14 rounded-xl bg-primary-500 flex items-center justify-center text-white font-heading font-bold text-lg shrink-0">
-                  {item.step}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-start">
+            <div className="space-y-8">
+              {workflowSteps.map((item) => (
+                <div key={item.step} className="flex gap-6 items-start">
+                  <div className="w-14 h-14 rounded-xl bg-primary-500 flex items-center justify-center text-white font-heading font-bold text-lg shrink-0">
+                    {item.step}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-heading font-semibold text-primary-900">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed mt-2">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary-900">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed mt-2">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 hidden lg:block lg:sticky lg:top-24">
+              <Image
+                src="/images/clinica-sala.jpg"
+                alt="Sala de espera de una clínica dental colaboradora"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -17,6 +17,15 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: '/metodo',
+        destination: '/sobre-mi#metodo',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

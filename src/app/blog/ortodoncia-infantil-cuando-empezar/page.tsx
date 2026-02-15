@@ -9,7 +9,7 @@ import { AccordionItem } from '@/components/ui/AccordionItem';
 export const metadata: Metadata = generatePageMetadata({
   title: 'Ortodoncia infantil: ¿cuándo llevar a tu hijo al ortodoncista?',
   description:
-    'Guía para padres: cuándo es el momento adecuado para la primera revisión ortodóntica, señales de alerta y tipos de tratamiento según la edad. Dr. Hugo Gómez Mengual, ortodoncista en Valencia.',
+    'Guía para padres: cuándo es el momento adecuado para la primera revisión ortodóntica, señales de alerta y tipos de tratamiento según la edad. Hugo Gómez, ortodoncista en Valencia.',
   path: '/blog/ortodoncia-infantil-cuando-empezar',
 });
 
@@ -89,7 +89,7 @@ export default function OrtodonciaInfantilCuandoEmpezarPage() {
               orientativas y unas señales clave que todo padre debería conocer. En este artículo,
               el{' '}
               <Link href="/sobre-mi" className="text-primary-600 underline hover:text-primary-700">
-                Dr. Hugo Gómez Mengual
+                Hugo Gómez
               </Link>
               , ortodoncista especialista en la Comunidad Valenciana, explica en qué momento es
               recomendable la primera visita y qué pueden esperar los padres en cada etapa del
@@ -312,7 +312,7 @@ export default function OrtodonciaInfantilCuandoEmpezarPage() {
               <Link href="/contacto" className="text-primary-600 underline hover:text-primary-700">
                 solicitar una consulta
               </Link>{' '}
-              con el Dr. Hugo Gómez Mengual.
+              con Hugo Gómez.
             </p>
 
             {/* FAQ */}

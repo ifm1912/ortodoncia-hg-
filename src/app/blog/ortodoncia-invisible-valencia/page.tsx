@@ -9,7 +9,7 @@ import { AccordionItem } from '@/components/ui/AccordionItem';
 export const metadata: Metadata = generatePageMetadata({
   title: 'Ortodoncia invisible en Valencia: guía completa [2025]',
   description:
-    'Guía completa sobre ortodoncia invisible en Valencia: qué es, cómo funciona, tipos de alineadores como Invisalign, ventajas y cómo elegir profesional. Dr. Hugo Gómez Mengual.',
+    'Guía completa sobre ortodoncia invisible en Valencia: qué es, cómo funciona, tipos de alineadores como Invisalign, ventajas y cómo elegir profesional. Hugo Gómez.',
   path: '/blog/ortodoncia-invisible-valencia',
 });
 
@@ -83,7 +83,7 @@ export default function OrtodonciainvisibleValenciaPage() {
               aparato invisible que apenas se nota en el día a día.
             </p>
             <p>
-              En esta guía, el Dr. Hugo Gómez Mengual, ortodoncista especialista en la Comunidad
+              En esta guía, Hugo Gómez, ortodoncista especialista en la Comunidad
               Valenciana, repasa los aspectos clave que debes conocer antes de iniciar un tratamiento
               con alineadores invisibles.
             </p>
@@ -236,9 +236,9 @@ export default function OrtodonciainvisibleValenciaPage() {
               </li>
             </ul>
             <p>
-              Si quieres conocer en detalle el enfoque de trabajo del Dr. Hugo Gómez Mengual,
+              Si quieres conocer en detalle el enfoque de trabajo de Hugo Gómez,
               puedes consultar la sección{' '}
-              <Link href="/metodo" className="text-primary-600 underline hover:text-primary-700">
+              <Link href="/sobre-mi#metodo" className="text-primary-600 underline hover:text-primary-700">
                 Mi método
               </Link>
               . Para ver los{' '}

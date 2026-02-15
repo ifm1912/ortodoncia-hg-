@@ -36,7 +36,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-50 lg:hidden transition-all duration-300 ${
+      className={`fixed inset-0 z-[60] lg:hidden transition-all duration-300 ${
         open ? 'pointer-events-auto' : 'pointer-events-none'
       }`}
     >
@@ -49,15 +49,15 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
         aria-hidden="true"
       />
 
-      {/* Panel — inline style ensures fully opaque background */}
+      {/* Panel */}
       <div
-        className={`fixed inset-y-0 right-0 w-full max-w-sm shadow-2xl transition-transform duration-300 ease-out ${
+        className={`fixed inset-y-0 right-0 w-[85vw] max-w-sm shadow-2xl transition-transform duration-300 ease-out flex flex-col ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
         style={{ backgroundColor: '#0a1f1f' }}
       >
         <div
-          className="flex items-center justify-between p-6"
+          className="flex items-center justify-between px-5 py-4 shrink-0"
           style={{ borderBottom: '1px solid #174b4b' }}
         >
           <span className="text-lg font-heading font-bold text-white">
@@ -75,7 +75,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
           </button>
         </div>
 
-        <nav className="px-4 py-6 overflow-y-auto max-h-[calc(100vh-5rem)]">
+        <nav className="flex-1 overflow-y-auto px-3 py-4">
           <ul className="space-y-1">
             {NAV_ITEMS.map((item) => {
               const isActive = pathname === item.href ||
@@ -84,10 +84,10 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`block px-4 py-3.5 text-base font-medium rounded-lg transition-colors ${
+                    className={`block px-4 py-3 text-[15px] leading-6 font-medium rounded-lg transition-colors ${
                       isActive
                         ? 'text-white bg-white/15'
-                        : 'text-white/80 hover:text-white hover:bg-white/10'
+                        : 'text-white/90 hover:text-white hover:bg-white/10'
                     }`}
                   >
                     {item.label}

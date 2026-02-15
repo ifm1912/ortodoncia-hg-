@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { FeatureCard } from '@/components/ui/FeatureCard';
 
@@ -36,11 +37,23 @@ const features = [
 
 export function PhilosophySection() {
   return (
-    <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="/images/metodo-trabajo-bg.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        sizes="100vw"
+        quality={80}
+      />
+      {/* Overlay for legibility */}
+      <div className="absolute inset-0 bg-white/85" />
+
+      <div className="relative z-10 max-w-7xl mx-auto">
         <SectionHeading
           title="Mi filosofía de trabajo"
-          subtitle="Ya sea con ortodoncia invisible, alineadores o aparatos dentales convencionales, cada tratamiento comienza con un diagnóstico digital preciso. Trabajo con mi propio escáner intraoral y una higienista especializada en ortodoncia para garantizar la máxima precisión en cada visita."
+          subtitle="La clave del éxito en un tratamiento de ortodoncia es realizar un diagnóstico profundo, exacto e individualizado en cada caso. Cuando la ortodoncia se basa en un buen diagnóstico, se convierte en un instrumento de alta precisión y gran eficacia que permite alcanzar los mejores resultados."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">

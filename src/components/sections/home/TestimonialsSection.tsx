@@ -4,7 +4,7 @@ import Link from 'next/link';
 const testimonials = [
   {
     quote:
-      'Tenía los dientes muy apiñados desde pequeña y nunca me había atrevido a ponerme ortodoncia de adulta. El Dr. Hugo me explicó todo el proceso con mucha claridad y el resultado ha sido espectacular.',
+      'Tenía los dientes muy apiñados desde pequeña y nunca me había atrevido a ponerme ortodoncia de adulta. Hugo me explicó todo el proceso con mucha claridad y el resultado ha sido espectacular.',
     name: 'Laura M.',
     treatment: 'Alineadores Invisalign®',
     city: 'Valencia',

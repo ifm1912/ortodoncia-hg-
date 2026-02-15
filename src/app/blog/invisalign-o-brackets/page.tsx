@@ -9,7 +9,7 @@ import { AccordionItem } from '@/components/ui/AccordionItem';
 export const metadata: Metadata = generatePageMetadata({
   title: '¿Invisalign o brackets? Cómo elegir el mejor tratamiento de ortodoncia',
   description:
-    'Comparativa detallada entre Invisalign y brackets de autoligado: diferencias, ventajas, inconvenientes y cuándo elegir cada sistema. Dr. Hugo Gómez Mengual, ortodoncista en Valencia.',
+    'Comparativa detallada entre Invisalign y brackets de autoligado: diferencias, ventajas, inconvenientes y cuándo elegir cada sistema. Hugo Gómez, ortodoncista en Valencia.',
   path: '/blog/invisalign-o-brackets',
 });
 
@@ -87,7 +87,7 @@ export default function InvisalignOBracketsPage() {
               depende de cada caso clínico.
             </p>
             <p>
-              En este artículo, el Dr. Hugo Gómez Mengual analiza las diferencias reales entre
+              En este artículo, Hugo Gómez analiza las diferencias reales entre
               Invisalign y los brackets de autoligado, explica en qué situaciones puede ser más adecuado
               cada sistema y, sobre todo, pone en contexto lo que verdaderamente determina el éxito de
               un tratamiento de ortodoncia.
@@ -241,7 +241,7 @@ export default function InvisalignOBracketsPage() {
               <Link href="/tratamientos" className="text-primary-600 underline hover:text-primary-700">
                 tratamientos con alineadores
               </Link>{' '}
-              que ofrece el Dr. Hugo Gómez Mengual, visita la sección correspondiente.
+              que ofrece Hugo Gómez, visita la sección correspondiente.
             </p>
 
             {/* Cuándo brackets */}
@@ -294,9 +294,9 @@ export default function InvisalignOBracketsPage() {
               contrastada.
             </p>
             <p>
-              Si deseas conocer el enfoque de trabajo del Dr. Hugo Gómez Mengual, puedes consultar la
+              Si deseas conocer el enfoque de trabajo de Hugo Gómez, puedes consultar la
               sección{' '}
-              <Link href="/metodo" className="text-primary-600 underline hover:text-primary-700">
+              <Link href="/sobre-mi#metodo" className="text-primary-600 underline hover:text-primary-700">
                 Mi método
               </Link>
               . Y si prefieres resolver tus dudas en persona,{' '}

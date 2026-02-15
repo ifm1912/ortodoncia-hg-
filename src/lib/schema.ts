@@ -109,7 +109,7 @@ export function getMedicalProcedureSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
-    name: 'Tratamientos de ortodoncia — Dr. Hugo Gómez Mengual',
+    name: 'Tratamientos de ortodoncia — Hugo Gómez',
     url: `${SITE_CONFIG.siteUrl}/tratamientos`,
     about: [
       {

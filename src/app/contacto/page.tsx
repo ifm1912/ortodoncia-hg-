@@ -9,9 +9,9 @@ import { ContactInfo } from '@/components/ui/ContactInfo';
 import { ContactForm } from '@/components/ui/ContactForm';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Contacto — Ortodoncista Dr. Hugo Gómez Mengual',
+  title: 'Contacto — Ortodoncista Hugo Gómez',
   description:
-    'Contacte con el Dr. Hugo Gómez Mengual, ortodoncista en Comunidad Valenciana. Correo electrónico, formulario de contacto e información de las clínicas colaboradoras.',
+    'Contacte con Hugo Gómez, ortodoncista en Comunidad Valenciana. Correo electrónico, formulario de contacto e información de las clínicas colaboradoras.',
   path: '/contacto',
 });
 

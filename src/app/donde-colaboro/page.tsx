@@ -5,11 +5,12 @@ import { getBreadcrumbSchema } from '@/lib/schema';
 import { CLINICS } from '@/lib/constants';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { ClinicCard } from '@/components/ui/ClinicCard';
+import { ValenciaMap } from '@/components/ui/ValenciaMap';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Dónde encontrarme — Ortodoncista en Valencia, Moncada, Museros, Albaida',
   description:
-    'Encuentre al Dr. Hugo Gómez Mengual en clínicas dentales de Museros, Moncada, Benetússer y Albaida (Valencia). Ortodoncista especialista en Comunidad Valenciana.',
+    'Encuentre a Hugo Gómez en clínicas dentales de Museros, Moncada, Benetússer y Albaida (Valencia). Ortodoncista especialista en Comunidad Valenciana.',
   path: '/donde-colaboro',
 });
 
@@ -43,16 +44,9 @@ export default function DondeColaboroPage() {
             ))}
           </div>
 
-          {/* Map placeholder */}
-          <div className="mt-12 w-full aspect-[16/9] rounded-2xl bg-gradient-to-br from-primary-100 to-primary-50 border border-primary-200 flex items-center justify-center">
-            <div className="text-center">
-              <svg className="w-12 h-12 mx-auto text-primary-300" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
-              </svg>
-              <p className="text-sm text-primary-400 mt-3">
-                Mapa de localización · Comunidad Valenciana
-              </p>
-            </div>
+          {/* Map */}
+          <div className="mt-12 max-w-md mx-auto">
+            <ValenciaMap clinics={CLINICS} />
           </div>
 
           <div className="mt-12 bg-secondary-50 rounded-xl border border-secondary-200 p-8">

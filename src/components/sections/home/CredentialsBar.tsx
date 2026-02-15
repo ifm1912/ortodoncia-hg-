@@ -18,15 +18,6 @@ const credentials = [
     ),
   },
   {
-    value: '4',
-    label: 'Clínicas en la Comunidad Valenciana',
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
-      </svg>
-    ),
-  },
-  {
     value: 'Máster',
     label: 'en Ortodoncia · Universitat de València',
     icon: (
@@ -41,7 +32,7 @@ export function CredentialsBar() {
   return (
     <section className="bg-secondary-50 border-y border-secondary-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {credentials.map((item, index) => (
             <div key={index} className="text-center">
               <div className="w-10 h-10 mx-auto rounded-lg bg-primary-50 flex items-center justify-center text-primary-600 mb-3">

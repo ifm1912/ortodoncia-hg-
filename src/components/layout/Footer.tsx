@@ -11,7 +11,7 @@ export function Footer() {
               {SITE_CONFIG.fullName}
             </h3>
             <p className="mt-1 text-sm text-primary-400 tracking-wider uppercase">
-              Ortodoncista
+              Ortodoncia
             </p>
             <p className="mt-4 text-sm text-primary-300 leading-relaxed">
               Especialista en ortodoncia en la Comunidad Valenciana.

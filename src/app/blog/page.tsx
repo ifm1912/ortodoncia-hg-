@@ -9,7 +9,7 @@ import { AccordionItem } from '@/components/ui/AccordionItem';
 export const metadata: Metadata = generatePageMetadata({
   title: 'Blog y preguntas frecuentes sobre ortodoncia — Invisalign, brackets, duración, precio',
   description:
-    'Artículos de ortodoncia y respuestas a las preguntas más frecuentes: Invisalign o brackets, cuánto dura, cuánto cuesta, ortodoncia en adultos y niños. Dr. Hugo Gómez Mengual, ortodoncista en Valencia.',
+    'Artículos de ortodoncia y respuestas a las preguntas más frecuentes: Invisalign o brackets, cuánto dura, cuánto cuesta, ortodoncia en adultos y niños. Hugo Gómez, ortodoncista en Valencia.',
   path: '/blog',
 });
 
@@ -86,9 +86,9 @@ const faqItems = [
       'En la primera visita se realiza una exploración clínica completa, se toman registros digitales con el escáner intraoral y se explican las opciones de tratamiento más adecuadas para cada caso.',
   },
   {
-    question: '¿El Dr. Hugo Gómez atiende en una consulta propia?',
+    question: '¿Hugo Gómez atiende en una consulta propia?',
     answer:
-      'El Dr. Hugo Gómez Mengual colabora con varias clínicas dentales de referencia en la Comunidad Valenciana. Puede consultar las clínicas y localidades en la sección «Dónde encontrarme».',
+      'Hugo Gómez colabora con varias clínicas dentales de referencia en la Comunidad Valenciana. Puede consultar las clínicas y localidades en la sección «Dónde encontrarme».',
   },
   {
     question: '¿Cómo puedo solicitar una cita?',
@@ -134,7 +134,7 @@ export default function BlogPage() {
           <SectionHeading
             as="h1"
             title="Blog de ortodoncia"
-            subtitle="Artículos y guías para resolver tus dudas sobre tratamientos de ortodoncia, escritos por el Dr. Hugo Gómez Mengual."
+            subtitle="Artículos y guías para resolver tus dudas sobre tratamientos de ortodoncia, escritos por Hugo Gómez."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">

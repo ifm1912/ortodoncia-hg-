@@ -9,7 +9,7 @@ import { AccordionItem } from '@/components/ui/AccordionItem';
 export const metadata: Metadata = generatePageMetadata({
   title: 'Ortodoncia en adultos: \u00bfmerece la pena a los 30, 40 o 50 a\u00f1os?',
   description:
-    '\u00bfEs tarde para ponerse ortodoncia de adulto? Descubre por qu\u00e9 no hay l\u00edmite de edad, opciones discretas disponibles y beneficios reales. Dr. Hugo G\u00f3mez, ortodoncista en Valencia.',
+    '\u00bfEs tarde para ponerse ortodoncia de adulto? Descubre por qu\u00e9 no hay l\u00edmite de edad, opciones discretas disponibles y beneficios reales. Hugo G\u00f3mez, ortodoncista en Valencia.',
   path: '/blog/ortodoncia-adultos',
 });
 
@@ -94,7 +94,7 @@ export default function OrtodonciaAdultosPage() {
               para la salud bucodental son significativos.
             </p>
             <p>
-              En este art\u00edculo, el Dr. Hugo G\u00f3mez Mengual, ortodoncista especialista,
+              En este art\u00edculo, Hugo G\u00f3mez, ortodoncista especialista,
               aborda las dudas m\u00e1s habituales sobre la ortodoncia en adultos y explica por qu\u00e9
               merece la pena dar el paso a los 30, 40 o 50 a\u00f1os.
             </p>
@@ -238,9 +238,9 @@ export default function OrtodonciaAdultosPage() {
               </li>
             </ul>
             <p>
-              Si quieres conocer en detalle c\u00f3mo trabaja el Dr. Hugo G\u00f3mez Mengual,
+              Si quieres conocer en detalle c\u00f3mo trabaja Hugo G\u00f3mez,
               puedes consultar la secci\u00f3n{' '}
-              <Link href="/metodo" className="text-primary-600 underline hover:text-primary-700">
+              <Link href="/sobre-mi#metodo" className="text-primary-600 underline hover:text-primary-700">
                 Mi m\u00e9todo
               </Link>
               .
@@ -292,7 +292,7 @@ export default function OrtodonciaAdultosPage() {
                 >
                   Solicita una consulta
                 </Link>{' '}
-                con el Dr. Hugo G\u00f3mez Mengual para una valoraci\u00f3n personalizada y
+                con Hugo G\u00f3mez para una valoraci\u00f3n personalizada y
                 descubre qu\u00e9 opciones se adaptan mejor a tu caso.
               </p>
             </div>
