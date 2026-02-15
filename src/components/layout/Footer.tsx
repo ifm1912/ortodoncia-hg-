@@ -17,9 +17,6 @@ export function Footer() {
               Especialista en ortodoncia en la Comunidad Valenciana.
               Colaborador en clínicas dentales de referencia.
             </p>
-            <p className="mt-3 text-xs text-primary-500">
-              {SITE_CONFIG.company}
-            </p>
           </div>
 
           <div>

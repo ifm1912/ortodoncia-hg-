@@ -7,7 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { path: '/', priority: 1.0, changeFrequency: 'monthly' as const },
     { path: '/sobre-mi', priority: 0.9, changeFrequency: 'monthly' as const },
-    { path: '/para-clinicas', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/tratamientos', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/blog', priority: 0.7, changeFrequency: 'weekly' as const },
     { path: '/blog/ortodoncia-invisible-valencia', priority: 0.6, changeFrequency: 'monthly' as const },

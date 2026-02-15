@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   phone: '620 110 833',
   phoneHref: 'tel:+34620110833',
   email: 'hgomez@hgortodoncia.com',
-  company: 'ORTOGOMEN SL',
+  company: '',
   siteUrl: 'https://www.hugogomezortodoncia.es',
   locale: 'es_ES',
   lang: 'es',
@@ -77,7 +77,6 @@ export const CLINICS = [
 export const NAV_ITEMS = [
   { label: 'Inicio', href: '/' },
   { label: 'Sobre mí', href: '/sobre-mi' },
-  { label: 'Para clínicas', href: '/para-clinicas' },
   { label: 'Tratamientos y casos', href: '/tratamientos' },
   { label: 'Dónde encontrarme', href: '/donde-colaboro' },
   { label: 'Contacto', href: '/contacto' },
