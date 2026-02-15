@@ -265,8 +265,8 @@ export default function SobreMiPage() {
                 {index === 1 && (
                   <div className="relative mt-6 w-full aspect-[4/3] rounded-xl overflow-hidden hidden lg:block">
                     <Image
-                      src="/images/escaner-1.jpg"
-                      alt="Escáner intraoral para planificación digital"
+                      src="/images/planificacion-digital.jpg"
+                      alt="Análisis de reconstrucciones 3D para planificación digital del tratamiento de ortodoncia"
                       fill
                       className="object-cover"
                       sizes="300px"
