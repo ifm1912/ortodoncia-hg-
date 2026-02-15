@@ -65,8 +65,14 @@ const cases: CaseData[] = [
   {
     title: 'Clase II en adolescente',
     description:
-      'Paciente adolescente con maloclusión de clase II. Caso en curso; las imágenes del antes y después se publicarán próximamente.',
-    images: [],
+      'Paciente adolescente con maloclusión de clase II. El tratamiento permitió corregir la relación entre ambas arcadas, logrando una oclusión funcional y una mejora estética significativa.',
+    images: [
+      {
+        before: '/images/casos/clase-ii-antes.jpg',
+        after: '/images/casos/clase-ii-despues.jpg',
+        alt: 'Clase II en adolescente',
+      },
+    ],
   },
 ];
 
