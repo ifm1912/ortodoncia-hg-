@@ -11,8 +11,8 @@ export function Footer() {
             <Image
               src="/images/logo-hg.png"
               alt="HG Ortodoncia"
-              width={120}
-              height={118}
+              width={119}
+              height={106}
               className="h-12 w-auto brightness-0 invert"
             />
             <p className="mt-4 text-sm text-primary-300 leading-relaxed">

@@ -22,8 +22,8 @@ export function Header() {
               <Image
                 src="/images/logo-hg.png"
                 alt="HG Ortodoncia"
-                width={120}
-                height={118}
+                width={119}
+                height={106}
                 className="h-12 w-auto"
                 priority
               />
