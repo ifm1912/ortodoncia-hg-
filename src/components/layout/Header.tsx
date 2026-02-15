@@ -2,8 +2,9 @@
 
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { NAV_ITEMS, SITE_CONFIG } from '@/lib/constants';
+import { NAV_ITEMS } from '@/lib/constants';
 import { MobileMenu } from './MobileMenu';
 
 export function Header() {
@@ -17,13 +18,15 @@ export function Header() {
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-primary-100">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <Link href="/" className="flex flex-col">
-              <span className="text-xl font-heading font-bold text-primary-800">
-                {SITE_CONFIG.name}
-              </span>
-              <span className="text-xs text-primary-500 tracking-wider uppercase">
-                Ortodoncia
-              </span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo-hg.png"
+                alt="HG Ortodoncia"
+                width={120}
+                height={118}
+                className="h-14 w-auto"
+                priority
+              />
             </Link>
 
             <div className="hidden lg:flex items-center gap-1">

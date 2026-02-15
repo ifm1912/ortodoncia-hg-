@@ -2,8 +2,9 @@
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { NAV_ITEMS, SITE_CONFIG } from '@/lib/constants';
+import { NAV_ITEMS } from '@/lib/constants';
 
 interface MobileMenuProps {
   open: boolean;
@@ -60,9 +61,13 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
           className="flex items-center justify-between px-5 py-4 shrink-0"
           style={{ borderBottom: '1px solid #174b4b' }}
         >
-          <span className="text-lg font-heading font-bold text-white">
-            {SITE_CONFIG.name}
-          </span>
+          <Image
+            src="/images/logo-hg.png"
+            alt="HG Ortodoncia"
+            width={100}
+            height={98}
+            className="h-10 w-auto brightness-0 invert"
+          />
           <button
             type="button"
             className="p-2 rounded-md text-white/70 hover:text-white"

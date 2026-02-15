@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { SITE_CONFIG, NAV_ITEMS } from '@/lib/constants';
 
 export function Footer() {
@@ -7,12 +8,13 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-white text-lg font-heading font-bold">
-              {SITE_CONFIG.fullName}
-            </h3>
-            <p className="mt-1 text-sm text-primary-400 tracking-wider uppercase">
-              Ortodoncia
-            </p>
+            <Image
+              src="/images/logo-hg.png"
+              alt="HG Ortodoncia"
+              width={120}
+              height={118}
+              className="h-12 w-auto brightness-0 invert"
+            />
             <p className="mt-4 text-sm text-primary-300 leading-relaxed">
               Especialista en ortodoncia en la Comunidad Valenciana.
               Colaborador en clínicas dentales de referencia.
